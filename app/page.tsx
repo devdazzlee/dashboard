@@ -13,6 +13,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false)
   const [lastUpdated, setLastUpdated] = useState(new Date())
 
+  // update Code 
   useEffect(() => {
     fetch(`${backendUrl}/api/site-status`) // change to production API when deploying
       .then((res) => res.json())
